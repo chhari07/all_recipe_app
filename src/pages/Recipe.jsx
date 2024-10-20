@@ -52,13 +52,13 @@ const Recipe = () => {
 
     return (
         <div className="recipe-container-main">
-            <h1 className='  text-2xl font-extrabold   '>{details?.title}</h1>
+            <h1 className='  text-2xl font-extrabold mt-10   '>{details?.title}</h1>
             <div className="recipe-container">
                 <div className="recipe-container-left  mb-44   ">
                     <img src={details?.image} alt={details?.title} className='recipe-imgs' />
                 </div>
-                <div className="recipe-container-right">
-                    <div className="btn-container">
+                <div className="recipe-container-right  ">
+                    <div className="btn-container ">
                         <Button  className=' bg-black text-white  '
                             variant='contained' 
                             onClick={() => handleClick('summary')}

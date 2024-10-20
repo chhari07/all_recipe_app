@@ -4,6 +4,7 @@
     justify-content: center;
     flex-wrap: wrap; 
     padding: 10px;
+  
 }
 
 .category-container a {
@@ -27,7 +28,8 @@
 }
 
 .active {
-    background-color: #F77121 !important;
+    background: linear-gradient(to right, #38b2ac, #9f7aea);
+
 }
 
 
@@ -39,13 +41,15 @@
     .category-container a {
         height: 70px;
         width: 70px; 
+        
     }
 }
 
 @media (max-width: 480px) {
     .category-container {
-        flex-direction: column; 
-        gap: 20px; 
+        gap: 20px;
+        justify-content: space-around; /* Keep items centered horizontally */
+        flex-wrap: nowrap; /* Ensure items remain in a single row */
     }
 
     .category-container a {

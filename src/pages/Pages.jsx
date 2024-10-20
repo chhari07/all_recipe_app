@@ -8,12 +8,15 @@ import Recipe from "./Recipe";
 import Header from "../components/Header";
 import { Footer } from "../components/Fotter";
 
+
 const Pages = () => {
 
     return (
         <Router>
             <Header />
+        
             <div className="pages-container">
+                
                 <Routes>
                     <Route path="/" element={[<Search />, <Category />, <Home />]}></Route>
                     <Route path="/cuisine/:type" element={[<Search />, <Category />, <Cuisine />]}></Route>
